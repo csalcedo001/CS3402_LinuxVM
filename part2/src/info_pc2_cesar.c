@@ -3,7 +3,7 @@
 int main (void) {
 	printFreeMemory();
 	printModeTime();
-	printKernelContextChangeRatio();
+	printSwitches();
 	
 	return 0;
 }

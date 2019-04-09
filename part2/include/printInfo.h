@@ -5,7 +5,7 @@
 
 void printFreeMemory();
 void printModeTime();
-void printKernelContextChangeRatio();
-void printProcessCreationRatio();
+void print();
+void printSwitches();
 
 #endif

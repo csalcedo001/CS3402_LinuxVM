@@ -1,4 +1,4 @@
-bin/info_pc1_cesar: src/info_pc1_cesar.c $(patsubst lib/%.c, build/%.o, $(wildcard lib/*))
+bin/info_pc2_cesar: src/info_pc2_cesar.c $(patsubst lib/%.c, build/%.o, $(wildcard lib/*))
 	gcc -I include -o $@ $^
 
 build/%.o: lib/%.c include/%.h

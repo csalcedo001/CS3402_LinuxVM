@@ -26,7 +26,7 @@ void printFreeMemory() {
  
  	double freeMemory = getInt(file, ' ');
 
- 	printf("Free Memory: %.5f%%\n", 100 * freeMemory / totalMemory);
+ 	printf("Free Memory:  %.5f%%\n", 100 * freeMemory / totalMemory);
  
  	fclose(file);
 }
@@ -60,9 +60,9 @@ void printModeTime() {
 
 	double systemTime = (float) getInt(file, ' ') / 100;
 
-	printf("User time: %f%%\n", 100 * userTime / totalTime);
-	printf("System time: %f%%\n", 100 * systemTime / totalTime);
-	printf("Idle time: %f%%\n", 100 * idleTime / totalTime);
+	printf("User time:    %f%%\n", 100 * userTime / totalTime);
+	printf("System time:  %f%%\n", 100 * systemTime / totalTime);
+	printf("Idle time:    %f%%\n", 100 * idleTime / totalTime);
 
 	fclose(file);
 }
@@ -85,7 +85,7 @@ void setSwitches(int *contexts, int *processes) {
 	fclose(file);
 }
 
-void printKernelContextChangeRatio() {
+void printSwitches() {
 	float f = 0.0000001;
 
 	int contextSwitches, pastContextSwitches;
