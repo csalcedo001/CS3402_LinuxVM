@@ -2,6 +2,8 @@
 
 int main (void) {
 	printFreeMemory();
+	printModeTime();
+	printKernelContextChangeRatio();
 	
 	return 0;
 }

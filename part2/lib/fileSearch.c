@@ -48,4 +48,16 @@ int parseInt(FILE *file, int length) {
 	return atoi(number);
 }
 
+int getInt(FILE *file, char stopChar) {
+	int length = findChar(file, stopChar);
+
+	move(file, -length - 1);
+	
+	int result = parseInt(file, length);
+
+	move(file, 1);
+
+	return result;
+}
+
 #endif

@@ -8,5 +8,6 @@ void findPattern(FILE *file, char s[], int size);
 int findChar(FILE *file, char c);
 void printLine(FILE *file);
 int parseInt(FILE *file, int length);
+int getInt(FILE *file, char stopChar);
 
 #endif
