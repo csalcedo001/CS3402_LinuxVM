@@ -57,18 +57,25 @@ void bash_pwd(int argl, char **args) {
 }
 void bash_rm(int argl, char **args) {
 	if (argl > 1) {
-		for (int i = 1; i < argl; i++) {
-			if (args[i][0] == '/') {
-				unlink(args[i]);
+		struct stat data;
+		stat(args[1], &data);
+		if (S_ISREG(data.st_mode)) {
+			for (int i = 1; i < argl; i++) {
+				if (args[i][0] == '/') {
+					unlink(args[i]);
+				}
+				else {
+					char s[FILE_NAME_LENGTH + 1] = {'\0'};
+					getcwd(s, FILE_NAME_LENGTH);
+					strcat(s, "/");
+					strcat(s, args[i]);
+		
+					unlink(s);
+				}
 			}
-			else {
-				char s[FILE_NAME_LENGTH + 1] = {'\0'};
-				getcwd(s, FILE_NAME_LENGTH);
-				strcat(s, "/");
-				strcat(s, args[i]);
-	
-				unlink(s);
-			}
+		}
+		else {
+			printf("rm: %s: not a regular file\n", args[1]);
 		}
 	}
 	else {

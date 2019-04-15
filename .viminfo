@@ -11,16 +11,18 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/64
+~Msle0~/\<define\>
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1555303679,,"wq"
+:make
+|2,0,1555303596,,"make"
 :q
 |2,0,1555299498,,"q"
-:wq
-|2,0,1555299384,,"wq"
 :w
 |2,0,1555296060,,"w"
 :colorscheme desert
@@ -73,8 +75,6 @@ $
 |2,0,1555010805,,"'wq"
 :WQ
 |2,0,1555007637,,"WQ"
-:make
-|2,0,1554998293,,"make"
 :s
 |2,0,1554893481,,"s"
 :nn
@@ -115,6 +115,8 @@ $
 |2,0,1554234346,,"exit"
 
 # Search String History (newest to oldest):
+? \<define\>
+|2,1,1555302991,,"\\<define\\>"
 ?/$$
 |2,1,1555296624,47,"$$"
 ? @$
@@ -132,37 +134,44 @@ $
 
 # Registers:
 "0	LINE	0
-			minimumFunction();
-|3,0,0,1,1,0,1555292417,"		minimumFunction();"
+	#define LS 1
+|3,0,0,1,1,0,1555302979,"#define LS 1"
 ""1	LINE	0
-			
-|3,1,1,1,1,0,1555299383,"		"
+	#include <sys/types.h>
+|3,1,1,1,1,0,1555303660,"#include <sys/types.h>"
 "2	LINE	0
 	
-			printf("\033[2J'\n");
-|3,0,2,1,2,0,1555297632,"","		printf(\"\\033[2J'\\n\");"
+	#define LS 1
+	#define CD 2
+	#define MKDIR 3
+	#define PWD 4
+	#define RM 5
+	#define EXIT 6
+	#define NANO 7
+	#define CAT 8
+|3,0,2,1,9,0,1555303080,"","#define LS 1","#define CD 2","#define MKDIR 3","#define PWD 4","#define RM 5","#define EXIT 6","#define NANO 7","#define CAT 8"
 "3	LINE	0
-				
-|3,0,3,1,1,0,1555296445,"			"
-"4	LINE	0
-				continue;
-|3,0,4,1,1,0,1555296437,"			continue;"
-"5	LINE	0
-			}
-|3,0,5,1,1,0,1555296433,"		}"
-"6	LINE	0
-		chdir(arg);
-|3,0,6,1,1,0,1555295265,"	chdir(arg);"
-"7	LINE	0
-		printf("%d\n\n", argl);
-|3,0,7,1,1,0,1555294485,"	printf(\"%d\\n\\n\", argl);"
-"8	LINE	0
 	
-			printf("%d\n\n", argl);
-|3,0,8,1,2,0,1555294477,"","		printf(\"%d\\n\\n\", argl);"
+|3,0,3,1,1,0,1555302998,""
+"4	LINE	0
+			
+|3,0,4,1,1,0,1555299383,"		"
+"5	LINE	0
+	
+			printf("\033[2J'\n");
+|3,0,5,1,2,0,1555297632,"","		printf(\"\\033[2J'\\n\");"
+"6	LINE	0
+				
+|3,0,6,1,1,0,1555296445,"			"
+"7	LINE	0
+				continue;
+|3,0,7,1,1,0,1555296437,"			continue;"
+"8	LINE	0
+			}
+|3,0,8,1,1,0,1555296433,"		}"
 "9	LINE	0
-			char *route = getenv("HOME");
-|3,0,9,1,1,0,1555294263,"		char *route = getenv(\"HOME\");"
+		chdir(arg);
+|3,0,9,1,1,0,1555295265,"	chdir(arg);"
 "q	CHAR	0
 	
 |3,0,26,0,1,0,1554750974,""
@@ -171,230 +180,315 @@ $
 |3,0,36,0,1,0,1555298492,"n"
 
 # File marks:
-'0  1110  1  ~/.viminfo
-|4,48,1110,1,1555299498,"~/.viminfo"
-'1  15  0  ~/semana01/bash/src/bash.c
-|4,49,15,0,1555299384,"~/semana01/bash/src/bash.c"
-'2  7  24  ~/semana01/bash/src/bash.c
-|4,50,7,24,1555298583,"~/semana01/bash/src/bash.c"
-'3  7  24  ~/semana01/bash/src/bash.c
-|4,51,7,24,1555298583,"~/semana01/bash/src/bash.c"
-'4  7  22  ~/semana01/bash/src/bash.c
-|4,52,7,22,1555298493,"~/semana01/bash/src/bash.c"
-'5  7  22  ~/semana01/bash/src/bash.c
-|4,53,7,22,1555298493,"~/semana01/bash/src/bash.c"
-'6  7  9  ~/semana01/bash/src/bash.c
-|4,54,7,9,1555298475,"~/semana01/bash/src/bash.c"
-'7  7  9  ~/semana01/bash/src/bash.c
-|4,55,7,9,1555298475,"~/semana01/bash/src/bash.c"
-'8  7  9  ~/semana01/bash/src/bash.c
-|4,56,7,9,1555298475,"~/semana01/bash/src/bash.c"
-'9  7  9  ~/semana01/bash/src/bash.c
-|4,57,7,9,1555298475,"~/semana01/bash/src/bash.c"
+'0  61  16  ~/semana01/bash/lib/bashCommands.c
+|4,48,61,16,1555303679,"~/semana01/bash/lib/bashCommands.c"
+'1  7  0  ~/semana01/bash/include/bashCommands.h
+|4,49,7,0,1555303662,"~/semana01/bash/include/bashCommands.h"
+'2  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,50,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
+'3  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,51,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
+'4  7  4  ~/semana01/bash/include/bashCommands.h
+|4,52,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
+'5  61  16  ~/semana01/bash/lib/bashCommands.c
+|4,53,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
+'6  61  16  ~/semana01/bash/lib/bashCommands.c
+|4,54,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
+'7  61  16  ~/semana01/bash/lib/bashCommands.c
+|4,55,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
+'8  8  0  ~/semana01/bash/include/bashCommands.h
+|4,56,8,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+'9  7  0  ~/semana01/bash/include/bashCommands.h
+|4,57,7,0,1555303584,"~/semana01/bash/include/bashCommands.h"
 
 # Jumplist (newest first):
--'  1110  1  ~/.viminfo
-|4,39,1110,1,1555299498,"~/.viminfo"
--'  28  0  ~/.viminfo
-|4,39,28,0,1555299455,"~/.viminfo"
--'  1  0  ~/.viminfo
-|4,39,1,0,1555299421,"~/.viminfo"
--'  15  0  ~/semana01/bash/src/bash.c
-|4,39,15,0,1555299384,"~/semana01/bash/src/bash.c"
--'  15  0  ~/semana01/bash/src/bash.c
-|4,39,15,0,1555299384,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555299368,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555299368,"~/semana01/bash/src/bash.c"
--'  7  24  ~/semana01/bash/src/bash.c
-|4,39,7,24,1555298583,"~/semana01/bash/src/bash.c"
--'  7  24  ~/semana01/bash/src/bash.c
-|4,39,7,24,1555298583,"~/semana01/bash/src/bash.c"
--'  7  24  ~/semana01/bash/src/bash.c
-|4,39,7,24,1555298583,"~/semana01/bash/src/bash.c"
--'  7  24  ~/semana01/bash/src/bash.c
-|4,39,7,24,1555298583,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555298520,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555298520,"~/semana01/bash/src/bash.c"
--'  7  22  ~/semana01/bash/src/bash.c
-|4,39,7,22,1555298493,"~/semana01/bash/src/bash.c"
--'  7  22  ~/semana01/bash/src/bash.c
-|4,39,7,22,1555298493,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555298486,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555298486,"~/semana01/bash/src/bash.c"
--'  7  9  ~/semana01/bash/src/bash.c
-|4,39,7,9,1555298475,"~/semana01/bash/src/bash.c"
--'  7  9  ~/semana01/bash/src/bash.c
-|4,39,7,9,1555298475,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555298466,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555298466,"~/semana01/bash/src/bash.c"
--'  7  20  ~/semana01/bash/src/bash.c
-|4,39,7,20,1555298445,"~/semana01/bash/src/bash.c"
--'  7  20  ~/semana01/bash/src/bash.c
-|4,39,7,20,1555298445,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555298434,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555298434,"~/semana01/bash/src/bash.c"
--'  7  23  ~/semana01/bash/src/bash.c
-|4,39,7,23,1555297945,"~/semana01/bash/src/bash.c"
--'  7  23  ~/semana01/bash/src/bash.c
-|4,39,7,23,1555297945,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555297929,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555297929,"~/semana01/bash/src/bash.c"
--'  7  28  ~/semana01/bash/src/bash.c
-|4,39,7,28,1555297892,"~/semana01/bash/src/bash.c"
--'  7  28  ~/semana01/bash/src/bash.c
-|4,39,7,28,1555297892,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555297885,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555297885,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555297870,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555297870,"~/semana01/bash/src/bash.c"
--'  7  27  ~/semana01/bash/src/bash.c
-|4,39,7,27,1555297847,"~/semana01/bash/src/bash.c"
--'  7  27  ~/semana01/bash/src/bash.c
-|4,39,7,27,1555297847,"~/semana01/bash/src/bash.c"
--'  7  27  ~/semana01/bash/src/bash.c
-|4,39,7,27,1555297847,"~/semana01/bash/src/bash.c"
--'  7  27  ~/semana01/bash/src/bash.c
-|4,39,7,27,1555297847,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555297827,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555297827,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  8  0  ~/semana01/bash/src/bash.c
-|4,39,8,0,1555297640,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555297627,"~/semana01/bash/src/bash.c"
--'  1  0  ~/semana01/bash/src/bash.c
-|4,39,1,0,1555297627,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
--'  14  17  ~/semana01/bash/src/bash.c
-|4,39,14,17,1555297169,"~/semana01/bash/src/bash.c"
--'  15  17  ~/semana01/bash/src/bash.c
-|4,39,15,17,1555297169,"~/semana01/bash/src/bash.c"
+-'  61  16  ~/semana01/bash/lib/bashCommands.c
+|4,39,61,16,1555303679,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303666,"~/semana01/bash/lib/bashCommands.c"
+-'  7  0  ~/semana01/bash/include/bashCommands.h
+|4,39,7,0,1555303662,"~/semana01/bash/include/bashCommands.h"
+-'  7  0  ~/semana01/bash/include/bashCommands.h
+|4,39,7,0,1555303662,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303657,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303657,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
+-'  7  4  ~/semana01/bash/include/bashCommands.h
+|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
+-'  7  4  ~/semana01/bash/include/bashCommands.h
+|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
+-'  7  4  ~/semana01/bash/include/bashCommands.h
+|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
+-'  7  4  ~/semana01/bash/include/bashCommands.h
+|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
+-'  61  16  ~/semana01/bash/lib/bashCommands.c
+|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
+-'  61  16  ~/semana01/bash/lib/bashCommands.c
+|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
+-'  61  16  ~/semana01/bash/lib/bashCommands.c
+|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
+-'  61  16  ~/semana01/bash/lib/bashCommands.c
+|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
+-'  61  16  ~/semana01/bash/lib/bashCommands.c
+|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
+-'  61  16  ~/semana01/bash/lib/bashCommands.c
+|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303596,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303596,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303596,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303596,"~/semana01/bash/lib/bashCommands.c"
+-'  8  0  ~/semana01/bash/include/bashCommands.h
+|4,39,8,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  9  0  ~/semana01/bash/include/bashCommands.h
+|4,39,9,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  8  0  ~/semana01/bash/include/bashCommands.h
+|4,39,8,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  8  0  ~/semana01/bash/include/bashCommands.h
+|4,39,8,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  9  0  ~/semana01/bash/include/bashCommands.h
+|4,39,9,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  8  0  ~/semana01/bash/include/bashCommands.h
+|4,39,8,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  8  0  ~/semana01/bash/include/bashCommands.h
+|4,39,8,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  8  0  ~/semana01/bash/include/bashCommands.h
+|4,39,8,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  9  0  ~/semana01/bash/include/bashCommands.h
+|4,39,9,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  8  0  ~/semana01/bash/include/bashCommands.h
+|4,39,8,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  8  0  ~/semana01/bash/include/bashCommands.h
+|4,39,8,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  9  0  ~/semana01/bash/include/bashCommands.h
+|4,39,9,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  8  0  ~/semana01/bash/include/bashCommands.h
+|4,39,8,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  8  0  ~/semana01/bash/include/bashCommands.h
+|4,39,8,0,1555303584,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303574,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303574,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303574,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303574,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303574,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303574,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303574,"~/semana01/bash/include/bashCommands.h"
+-'  1  0  ~/semana01/bash/include/bashCommands.h
+|4,39,1,0,1555303574,"~/semana01/bash/include/bashCommands.h"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  78  48  ~/semana01/bash/lib/bashCommands.c
+|4,39,78,48,1555303566,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  80  1  ~/semana01/bash/lib/bashCommands.c
+|4,39,80,1,1555303501,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  75  2  ~/semana01/bash/lib/bashCommands.c
+|4,39,75,2,1555303493,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303372,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303372,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303372,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303372,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303372,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303372,"~/semana01/bash/lib/bashCommands.c"
+-'  1  0  ~/semana01/bash/lib/bashCommands.c
+|4,39,1,0,1555303372,"~/semana01/bash/lib/bashCommands.c"
 
 # History of marks within files (newest to oldest):
+
+> ~/semana01/bash/lib/bashCommands.c
+	*	1555303679	0
+	"	61	16
+	^	61	17
+	.	61	16
+	+	6	33
+	+	7	16
+	+	24	1
+	+	8	0
+	+	7	1
+	+	27	1
+	+	26	43
+	+	7	0
+	+	30	23
+	+	34	13
+	+	30	22
+	+	31	8
+	+	36	1
+	+	40	0
+	+	38	48
+	+	39	1
+	+	38	31
+	+	42	16
+	+	50	0
+	+	48	34
+	+	49	1
+	+	43	0
+	+	42	1
+	+	48	24
+	+	51	34
+	+	59	15
+	+	64	0
+	+	83	1
+	+	85	35
+	+	89	24
+	+	101	23
+	+	59	12
+	+	31	13
+	+	34	18
+	+	42	12
+	+	48	35
+	+	82	31
+	+	62	28
+	+	76	0
+	+	62	26
+	+	64	0
+	+	79	2
+	+	78	48
+	+	61	16
+
+> ~/semana01/bash/include/bashCommands.h
+	*	1555303660	0
+	"	7	0
+	.	7	0
+	+	14	23
+	+	15	23
+	+	16	28
+	+	14	24
+	+	15	0
+	+	17	25
+	+	18	16
+	+	19	25
+	+	20	22
+	+	21	21
+	+	20	19
+	+	21	18
+	+	13	0
+	+	13	13
+	+	13	16
+	+	13	0
+	+	13	11
+	+	13	24
+	+	13	27
+	+	13	11
+	+	13	12
+	+	13	0
+	+	13	15
+	+	13	0
+	+	13	11
+	+	13	10
+	+	13	11
+	+	13	12
+	+	13	0
+	+	7	0
 
 > ~/.viminfo
 	*	1555299484	0
@@ -461,70 +555,9 @@ $
 	+	8	0
 	+	15	0
 
-> ~/semana01/bash/lib/bashCommands.c
-	*	1555296165	0
-	"	1	22
-	^	75	32
-	.	75	31
-	+	6	33
-	+	7	16
-	+	24	1
-	+	8	0
-	+	7	1
-	+	27	1
-	+	26	43
-	+	7	0
-	+	30	23
-	+	34	13
-	+	30	22
-	+	31	8
-	+	36	1
-	+	40	0
-	+	38	48
-	+	39	1
-	+	38	31
-	+	42	16
-	+	50	0
-	+	48	34
-	+	49	1
-	+	43	0
-	+	42	1
-	+	48	24
-	+	51	34
-	+	59	15
-	+	61	0
-	+	76	1
-	+	78	35
-	+	82	24
-	+	94	23
-	+	59	12
-	+	31	13
-	+	34	18
-	+	42	12
-	+	48	35
-	+	75	31
-
 > ilb/b
 	*	1555296004	0
 	"	1	0
-
-> ~/semana01/bash/include/bashCommands.h
-	*	1555295948	0
-	"	21	18
-	^	21	19
-	.	21	18
-	+	14	23
-	+	15	23
-	+	16	28
-	+	14	24
-	+	15	0
-	+	17	25
-	+	18	16
-	+	19	25
-	+	20	22
-	+	21	21
-	+	20	19
-	+	21	18
 
 > lib/bashCommands.c
 	*	1555295323	0
