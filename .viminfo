@@ -18,7 +18,7 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1555289645,,"q"
+|2,0,1555291717,,"q"
 :wq
 |2,0,1555174770,,"wq"
 :colorscheme desert
@@ -169,30 +169,40 @@ $
 |3,0,36,0,1,0,1555136720,"funcTotal"
 
 # File marks:
-'0  7  0  ~/semana02/measurements
-|4,48,7,0,1555289645,"~/semana02/measurements"
-'1  32  0  ~/semana02/measurements/main.c
-|4,49,32,0,1555174770,"~/semana02/measurements/main.c"
-'2  2  18  ~/semana02/measurements/main.c
-|4,50,2,18,1555136756,"~/semana02/measurements/main.c"
+'0  53  0  /lib/init/vars.sh
+|4,48,53,0,1555291717,"/lib/init/vars.sh"
+'1  7  0  ~/semana02/measurements
+|4,49,7,0,1555289645,"~/semana02/measurements"
+'2  32  0  ~/semana02/measurements/main.c
+|4,50,32,0,1555174770,"~/semana02/measurements/main.c"
 '3  2  18  ~/semana02/measurements/main.c
 |4,51,2,18,1555136756,"~/semana02/measurements/main.c"
-'4  27  10  ~/semana02/measurements/main.c
-|4,52,27,10,1555136740,"~/semana02/measurements/main.c"
-'5  26  10  ~/semana02/measurements/main.c
-|4,53,26,10,1555136740,"~/semana02/measurements/main.c"
-'6  27  10  ~/semana02/measurements/main.c
-|4,54,27,10,1555136740,"~/semana02/measurements/main.c"
-'7  26  10  ~/semana02/measurements/main.c
-|4,55,26,10,1555136740,"~/semana02/measurements/main.c"
-'8  20  11  ~/semana02/measurements/main.c
-|4,56,20,11,1555136604,"~/semana02/measurements/main.c"
+'4  2  18  ~/semana02/measurements/main.c
+|4,52,2,18,1555136756,"~/semana02/measurements/main.c"
+'5  27  10  ~/semana02/measurements/main.c
+|4,53,27,10,1555136740,"~/semana02/measurements/main.c"
+'6  26  10  ~/semana02/measurements/main.c
+|4,54,26,10,1555136740,"~/semana02/measurements/main.c"
+'7  27  10  ~/semana02/measurements/main.c
+|4,55,27,10,1555136740,"~/semana02/measurements/main.c"
+'8  26  10  ~/semana02/measurements/main.c
+|4,56,26,10,1555136740,"~/semana02/measurements/main.c"
 '9  20  11  ~/semana02/measurements/main.c
 |4,57,20,11,1555136604,"~/semana02/measurements/main.c"
 
 # Jumplist (newest first):
+-'  53  0  /lib/init/vars.sh
+|4,39,53,0,1555291717,"/lib/init/vars.sh"
+-'  1  0  /lib/init/vars.sh
+|4,39,1,0,1555291708,"/lib/init/vars.sh"
 -'  7  0  ~/semana02/measurements
 |4,39,7,0,1555289645,"~/semana02/measurements"
+-'  7  0  ~/semana02/measurements
+|4,39,7,0,1555289645,"~/semana02/measurements"
+-'  8  0  ~/semana02
+|4,39,8,0,1555289644,"~/semana02"
+-'  1  0  ~/semana02
+|4,39,1,0,1555289644,"~/semana02"
 -'  8  0  ~/semana02
 |4,39,8,0,1555289644,"~/semana02"
 -'  1  0  ~/semana02
@@ -201,10 +211,22 @@ $
 |4,39,32,0,1555174770,"~/semana02/measurements/main.c"
 -'  32  0  ~/semana02/measurements/main.c
 |4,39,32,0,1555174770,"~/semana02/measurements/main.c"
+-'  32  0  ~/semana02/measurements/main.c
+|4,39,32,0,1555174770,"~/semana02/measurements/main.c"
+-'  32  0  ~/semana02/measurements/main.c
+|4,39,32,0,1555174770,"~/semana02/measurements/main.c"
 -'  33  0  ~/semana02/measurements/main.c
 |4,39,33,0,1555174769,"~/semana02/measurements/main.c"
 -'  33  0  ~/semana02/measurements/main.c
 |4,39,33,0,1555174769,"~/semana02/measurements/main.c"
+-'  33  0  ~/semana02/measurements/main.c
+|4,39,33,0,1555174769,"~/semana02/measurements/main.c"
+-'  33  0  ~/semana02/measurements/main.c
+|4,39,33,0,1555174769,"~/semana02/measurements/main.c"
+-'  1  0  ~/semana02/measurements/main.c
+|4,39,1,0,1555169007,"~/semana02/measurements/main.c"
+-'  1  0  ~/semana02/measurements/main.c
+|4,39,1,0,1555169007,"~/semana02/measurements/main.c"
 -'  1  0  ~/semana02/measurements/main.c
 |4,39,1,0,1555169007,"~/semana02/measurements/main.c"
 -'  1  0  ~/semana02/measurements/main.c
@@ -217,6 +239,18 @@ $
 |4,39,2,18,1555136756,"~/semana02/measurements/main.c"
 -'  2  18  ~/semana02/measurements/main.c
 |4,39,2,18,1555136756,"~/semana02/measurements/main.c"
+-'  2  18  ~/semana02/measurements/main.c
+|4,39,2,18,1555136756,"~/semana02/measurements/main.c"
+-'  2  18  ~/semana02/measurements/main.c
+|4,39,2,18,1555136756,"~/semana02/measurements/main.c"
+-'  2  18  ~/semana02/measurements/main.c
+|4,39,2,18,1555136756,"~/semana02/measurements/main.c"
+-'  2  18  ~/semana02/measurements/main.c
+|4,39,2,18,1555136756,"~/semana02/measurements/main.c"
+-'  1  0  ~/semana02/measurements/main.c
+|4,39,1,0,1555136744,"~/semana02/measurements/main.c"
+-'  1  0  ~/semana02/measurements/main.c
+|4,39,1,0,1555136744,"~/semana02/measurements/main.c"
 -'  1  0  ~/semana02/measurements/main.c
 |4,39,1,0,1555136744,"~/semana02/measurements/main.c"
 -'  1  0  ~/semana02/measurements/main.c
@@ -237,6 +271,42 @@ $
 |4,39,27,10,1555136740,"~/semana02/measurements/main.c"
 -'  26  10  ~/semana02/measurements/main.c
 |4,39,26,10,1555136740,"~/semana02/measurements/main.c"
+-'  27  10  ~/semana02/measurements/main.c
+|4,39,27,10,1555136740,"~/semana02/measurements/main.c"
+-'  26  10  ~/semana02/measurements/main.c
+|4,39,26,10,1555136740,"~/semana02/measurements/main.c"
+-'  27  10  ~/semana02/measurements/main.c
+|4,39,27,10,1555136740,"~/semana02/measurements/main.c"
+-'  26  10  ~/semana02/measurements/main.c
+|4,39,26,10,1555136740,"~/semana02/measurements/main.c"
+-'  27  10  ~/semana02/measurements/main.c
+|4,39,27,10,1555136740,"~/semana02/measurements/main.c"
+-'  26  10  ~/semana02/measurements/main.c
+|4,39,26,10,1555136740,"~/semana02/measurements/main.c"
+-'  27  10  ~/semana02/measurements/main.c
+|4,39,27,10,1555136740,"~/semana02/measurements/main.c"
+-'  26  10  ~/semana02/measurements/main.c
+|4,39,26,10,1555136740,"~/semana02/measurements/main.c"
+-'  35  0  ~/semana02/measurements/main.c
+|4,39,35,0,1555136617,"~/semana02/measurements/main.c"
+-'  34  0  ~/semana02/measurements/main.c
+|4,39,34,0,1555136617,"~/semana02/measurements/main.c"
+-'  35  0  ~/semana02/measurements/main.c
+|4,39,35,0,1555136617,"~/semana02/measurements/main.c"
+-'  34  0  ~/semana02/measurements/main.c
+|4,39,34,0,1555136617,"~/semana02/measurements/main.c"
+-'  1  0  ~/semana02/measurements/main.c
+|4,39,1,0,1555136617,"~/semana02/measurements/main.c"
+-'  35  0  ~/semana02/measurements/main.c
+|4,39,35,0,1555136617,"~/semana02/measurements/main.c"
+-'  34  0  ~/semana02/measurements/main.c
+|4,39,34,0,1555136617,"~/semana02/measurements/main.c"
+-'  35  0  ~/semana02/measurements/main.c
+|4,39,35,0,1555136617,"~/semana02/measurements/main.c"
+-'  34  0  ~/semana02/measurements/main.c
+|4,39,34,0,1555136617,"~/semana02/measurements/main.c"
+-'  1  0  ~/semana02/measurements/main.c
+|4,39,1,0,1555136617,"~/semana02/measurements/main.c"
 -'  35  0  ~/semana02/measurements/main.c
 |4,39,35,0,1555136617,"~/semana02/measurements/main.c"
 -'  34  0  ~/semana02/measurements/main.c
@@ -277,6 +347,30 @@ $
 |4,39,19,11,1555136604,"~/semana02/measurements/main.c"
 -'  19  11  ~/semana02/measurements/main.c
 |4,39,19,11,1555136604,"~/semana02/measurements/main.c"
+-'  20  11  ~/semana02/measurements/main.c
+|4,39,20,11,1555136604,"~/semana02/measurements/main.c"
+-'  19  11  ~/semana02/measurements/main.c
+|4,39,19,11,1555136604,"~/semana02/measurements/main.c"
+-'  20  11  ~/semana02/measurements/main.c
+|4,39,20,11,1555136604,"~/semana02/measurements/main.c"
+-'  19  11  ~/semana02/measurements/main.c
+|4,39,19,11,1555136604,"~/semana02/measurements/main.c"
+-'  19  11  ~/semana02/measurements/main.c
+|4,39,19,11,1555136604,"~/semana02/measurements/main.c"
+-'  20  11  ~/semana02/measurements/main.c
+|4,39,20,11,1555136604,"~/semana02/measurements/main.c"
+-'  19  11  ~/semana02/measurements/main.c
+|4,39,19,11,1555136604,"~/semana02/measurements/main.c"
+-'  20  11  ~/semana02/measurements/main.c
+|4,39,20,11,1555136604,"~/semana02/measurements/main.c"
+-'  19  11  ~/semana02/measurements/main.c
+|4,39,19,11,1555136604,"~/semana02/measurements/main.c"
+-'  19  11  ~/semana02/measurements/main.c
+|4,39,19,11,1555136604,"~/semana02/measurements/main.c"
+-'  1  0  ~/semana02/measurements/main.c
+|4,39,1,0,1555136596,"~/semana02/measurements/main.c"
+-'  1  0  ~/semana02/measurements/main.c
+|4,39,1,0,1555136596,"~/semana02/measurements/main.c"
 -'  1  0  ~/semana02/measurements/main.c
 |4,39,1,0,1555136596,"~/semana02/measurements/main.c"
 -'  1  0  ~/semana02/measurements/main.c
@@ -285,112 +379,24 @@ $
 |4,39,19,32,1555136573,"~/semana02/measurements/main.c"
 -'  19  32  ~/semana02/measurements/main.c
 |4,39,19,32,1555136573,"~/semana02/measurements/main.c"
+-'  19  32  ~/semana02/measurements/main.c
+|4,39,19,32,1555136573,"~/semana02/measurements/main.c"
+-'  19  32  ~/semana02/measurements/main.c
+|4,39,19,32,1555136573,"~/semana02/measurements/main.c"
 -'  1  0  ~/semana02/measurements/main.c
 |4,39,1,0,1555136557,"~/semana02/measurements/main.c"
 -'  1  0  ~/semana02/measurements/main.c
 |4,39,1,0,1555136557,"~/semana02/measurements/main.c"
--'  17  42  ~/semana02/measurements/main.c
-|4,39,17,42,1555136530,"~/semana02/measurements/main.c"
--'  16  42  ~/semana02/measurements/main.c
-|4,39,16,42,1555136530,"~/semana02/measurements/main.c"
--'  17  42  ~/semana02/measurements/main.c
-|4,39,17,42,1555136530,"~/semana02/measurements/main.c"
--'  16  42  ~/semana02/measurements/main.c
-|4,39,16,42,1555136530,"~/semana02/measurements/main.c"
--'  16  42  ~/semana02/measurements/main.c
-|4,39,16,42,1555136530,"~/semana02/measurements/main.c"
--'  16  42  ~/semana02/measurements/main.c
-|4,39,16,42,1555136530,"~/semana02/measurements/main.c"
--'  16  42  ~/semana02/measurements/main.c
-|4,39,16,42,1555136530,"~/semana02/measurements/main.c"
--'  17  42  ~/semana02/measurements/main.c
-|4,39,17,42,1555136530,"~/semana02/measurements/main.c"
--'  16  42  ~/semana02/measurements/main.c
-|4,39,16,42,1555136530,"~/semana02/measurements/main.c"
--'  17  42  ~/semana02/measurements/main.c
-|4,39,17,42,1555136530,"~/semana02/measurements/main.c"
--'  16  42  ~/semana02/measurements/main.c
-|4,39,16,42,1555136530,"~/semana02/measurements/main.c"
--'  16  42  ~/semana02/measurements/main.c
-|4,39,16,42,1555136530,"~/semana02/measurements/main.c"
--'  16  42  ~/semana02/measurements/main.c
-|4,39,16,42,1555136530,"~/semana02/measurements/main.c"
--'  16  42  ~/semana02/measurements/main.c
-|4,39,16,42,1555136530,"~/semana02/measurements/main.c"
 -'  1  0  ~/semana02/measurements/main.c
-|4,39,1,0,1555136388,"~/semana02/measurements/main.c"
+|4,39,1,0,1555136557,"~/semana02/measurements/main.c"
 -'  1  0  ~/semana02/measurements/main.c
-|4,39,1,0,1555136388,"~/semana02/measurements/main.c"
--'  18  10  ~/semana02/measurements/main.c
-|4,39,18,10,1555136209,"~/semana02/measurements/main.c"
--'  18  10  ~/semana02/measurements/main.c
-|4,39,18,10,1555136209,"~/semana02/measurements/main.c"
--'  17  10  ~/semana02/measurements/main.c
-|4,39,17,10,1555136209,"~/semana02/measurements/main.c"
--'  17  10  ~/semana02/measurements/main.c
-|4,39,17,10,1555136209,"~/semana02/measurements/main.c"
--'  17  10  ~/semana02/measurements/main.c
-|4,39,17,10,1555136209,"~/semana02/measurements/main.c"
--'  19  10  ~/semana02/measurements/main.c
-|4,39,19,10,1555136209,"~/semana02/measurements/main.c"
--'  17  10  ~/semana02/measurements/main.c
-|4,39,17,10,1555136209,"~/semana02/measurements/main.c"
--'  18  10  ~/semana02/measurements/main.c
-|4,39,18,10,1555136209,"~/semana02/measurements/main.c"
--'  18  10  ~/semana02/measurements/main.c
-|4,39,18,10,1555136209,"~/semana02/measurements/main.c"
--'  17  10  ~/semana02/measurements/main.c
-|4,39,17,10,1555136209,"~/semana02/measurements/main.c"
--'  17  10  ~/semana02/measurements/main.c
-|4,39,17,10,1555136209,"~/semana02/measurements/main.c"
--'  17  10  ~/semana02/measurements/main.c
-|4,39,17,10,1555136209,"~/semana02/measurements/main.c"
--'  19  10  ~/semana02/measurements/main.c
-|4,39,19,10,1555136209,"~/semana02/measurements/main.c"
--'  17  10  ~/semana02/measurements/main.c
-|4,39,17,10,1555136209,"~/semana02/measurements/main.c"
--'  1  0  ~/semana02/measurements/main.c
-|4,39,1,0,1555136200,"~/semana02/measurements/main.c"
--'  1  0  ~/semana02/measurements/main.c
-|4,39,1,0,1555136200,"~/semana02/measurements/main.c"
--'  15  21  ~/semana02/measurements/main.c
-|4,39,15,21,1555136196,"~/semana02/measurements/main.c"
--'  14  21  ~/semana02/measurements/main.c
-|4,39,14,21,1555136196,"~/semana02/measurements/main.c"
--'  15  21  ~/semana02/measurements/main.c
-|4,39,15,21,1555136196,"~/semana02/measurements/main.c"
--'  14  21  ~/semana02/measurements/main.c
-|4,39,14,21,1555136196,"~/semana02/measurements/main.c"
--'  14  21  ~/semana02/measurements/main.c
-|4,39,14,21,1555136196,"~/semana02/measurements/main.c"
--'  14  21  ~/semana02/measurements/main.c
-|4,39,14,21,1555136196,"~/semana02/measurements/main.c"
--'  14  21  ~/semana02/measurements/main.c
-|4,39,14,21,1555136196,"~/semana02/measurements/main.c"
--'  14  21  ~/semana02/measurements/main.c
-|4,39,14,21,1555136196,"~/semana02/measurements/main.c"
--'  15  21  ~/semana02/measurements/main.c
-|4,39,15,21,1555136196,"~/semana02/measurements/main.c"
--'  14  21  ~/semana02/measurements/main.c
-|4,39,14,21,1555136196,"~/semana02/measurements/main.c"
--'  15  21  ~/semana02/measurements/main.c
-|4,39,15,21,1555136196,"~/semana02/measurements/main.c"
--'  14  21  ~/semana02/measurements/main.c
-|4,39,14,21,1555136196,"~/semana02/measurements/main.c"
--'  14  21  ~/semana02/measurements/main.c
-|4,39,14,21,1555136196,"~/semana02/measurements/main.c"
--'  14  21  ~/semana02/measurements/main.c
-|4,39,14,21,1555136196,"~/semana02/measurements/main.c"
--'  14  21  ~/semana02/measurements/main.c
-|4,39,14,21,1555136196,"~/semana02/measurements/main.c"
--'  14  21  ~/semana02/measurements/main.c
-|4,39,14,21,1555136196,"~/semana02/measurements/main.c"
--'  1  0  ~/semana02/measurements/main.c
-|4,39,1,0,1555136148,"~/semana02/measurements/main.c"
--'  1  0  ~/semana02/measurements/main.c
-|4,39,1,0,1555136148,"~/semana02/measurements/main.c"
+|4,39,1,0,1555136557,"~/semana02/measurements/main.c"
 
 # History of marks within files (newest to oldest):
+
+> /lib/init/vars.sh
+	*	1555291715	0
+	"	53	0
 
 > ~/semana02/measurements/main.c
 	*	1555174769	0
