@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <time.h>
 
-#define TESTS 20
+#define TESTS 1000
 
 void minimumFunction() {}
 
@@ -30,6 +30,10 @@ int main (void) {
 	}
 
 	printf("%.2f ns\n", totalTime / TESTS);
+
+	for (int i = 0; i < TEST; ++i) {
+		
+	}
 	
 	return 0;
 }
