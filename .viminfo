@@ -18,15 +18,21 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1555441830,,"wq"
+|2,0,1555476909,,"wq"
+:ew
+|2,0,1555476636,,"ew"
+:q
+|2,0,1555461462,,"q"
+:a
+|2,0,1555461450,,"a"
+:sq
+|2,0,1555460020,,"sq"
 :w
 |2,0,1555356791,,"w"
 :make
 |2,0,1555355312,,"make"
 :MAKE
 |2,0,1555355311,,"MAKE"
-:q
-|2,0,1555299498,,"q"
 :colorscheme desert
 |2,0,1555119947,,"colorscheme desert"
 :edit include/bashCommands.h
@@ -111,10 +117,6 @@ $
 |2,0,1554680215,,"edit csalcedo.c"
 :edit functions.h
 |2,0,1554680205,,"edit functions.h"
-:mak
-|2,0,1554405971,,"mak"
-:exit
-|2,0,1554234346,,"exit"
 
 # Search String History (newest to oldest):
 ? \<define\>
@@ -136,276 +138,356 @@ $
 
 # Registers:
 "0	LINE	0
-	#define LS 1
-|3,0,0,1,1,0,1555302979,"#define LS 1"
+				clock_gettime(CLOCK_MONOTONIC_RAW, &end);
+|3,0,0,1,1,0,1555472785,"			clock_gettime(CLOCK_MONOTONIC_RAW, &end);"
 "1	LINE	0
-	#include <sys/types.h>
-|3,0,1,1,1,0,1555303660,"#include <sys/types.h>"
+	
+				exit((int) end.tv_nsec);
+|3,0,1,1,2,0,1555476774,"","			exit((int) end.tv_nsec);"
 "2	LINE	0
-	
-	#define LS 1
-	#define CD 2
-	#define MKDIR 3
-	#define PWD 4
-	#define RM 5
-	#define EXIT 6
-	#define NANO 7
-	#define CAT 8
-|3,0,2,1,9,0,1555303080,"","#define LS 1","#define CD 2","#define MKDIR 3","#define PWD 4","#define RM 5","#define EXIT 6","#define NANO 7","#define CAT 8"
+				c
+|3,0,2,1,1,0,1555476743,"			c"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1555302998,""
+				clock_gettime(CLOCK_MONOTONIC_RAW, &end);
+|3,0,3,1,1,0,1555476740,"			clock_gettime(CLOCK_MONOTONIC_RAW, &end);"
 "4	LINE	0
-			
-|3,0,4,1,1,0,1555299383,"		"
+				int childMeasure;
+|3,0,4,1,1,0,1555476731,"			int childMeasure;"
 "5	LINE	0
 	
-			printf("\033[2J'\n");
-|3,0,5,1,2,0,1555297632,"","		printf(\"\\033[2J'\\n\");"
+|3,0,5,1,1,0,1555473081,""
 "6	LINE	0
-				
-|3,0,6,1,1,0,1555296445,"			"
+				printf("RESULT: %ld\n", end.tvV
+|3,0,6,1,1,0,1555473069,"			printf(\"RESULT: %ld\\n\", end.tvV"
 "7	LINE	0
-				continue;
-|3,0,7,1,1,0,1555296437,"			continue;"
+				clock_gettime(CLOCK_MONOTONIC_RAW, &end);
+|3,0,7,1,1,0,1555472787,"			clock_gettime(CLOCK_MONOTONIC_RAW, &end);"
 "8	LINE	0
-			}
-|3,0,8,1,1,0,1555296433,"		}"
+				printf("Father 1\n");
+|3,0,8,1,1,0,1555471461,"			printf(\"Father 1\\n\");"
 "9	LINE	0
-		chdir(arg);
-|3,0,9,1,1,0,1555295265,"	chdir(arg);"
+	
+|3,0,9,1,1,0,1555471460,""
 "q	CHAR	0
 	
 |3,0,26,0,1,0,1554750974,""
 ""-	CHAR	0
-	#1000
-|3,1,36,0,1,0,1555356787,"#1000"
+	childMeasure
+|3,1,36,0,1,0,1555476797,"childMeasure"
 
 # File marks:
-'0  5  0  ~/semana02/measurements/main.c
-|4,48,5,0,1555441830,"~/semana02/measurements/main.c"
-'1  4  2  ~/semana02/measurements/main.c
-|4,49,4,2,1555355315,"~/semana02/measurements/main.c"
-'2  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,50,61,16,1555303679,"~/semana01/bash/lib/bashCommands.c"
-'3  7  0  ~/semana01/bash/include/bashCommands.h
-|4,51,7,0,1555303662,"~/semana01/bash/include/bashCommands.h"
-'4  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,52,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
-'5  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,53,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
-'6  7  4  ~/semana01/bash/include/bashCommands.h
-|4,54,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
-'7  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,55,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
-'8  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,56,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
-'9  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,57,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
+'0  83  0  ~/semana03/measurements/main.c
+|4,48,83,0,1555476909,"~/semana03/measurements/main.c"
+'1  66  0  ~/semana03/measurements/main.c
+|4,49,66,0,1555476874,"~/semana03/measurements/main.c"
+'2  66  0  ~/semana03/measurements/main.c
+|4,50,66,0,1555476874,"~/semana03/measurements/main.c"
+'3  66  11  ~/semana03/measurements/main.c
+|4,51,66,11,1555476800,"~/semana03/measurements/main.c"
+'4  66  11  ~/semana03/measurements/main.c
+|4,52,66,11,1555476800,"~/semana03/measurements/main.c"
+'5  67  2  ~/semana03/measurements/main.c
+|4,53,67,2,1555476780,"~/semana03/measurements/main.c"
+'6  67  2  ~/semana03/measurements/main.c
+|4,54,67,2,1555476780,"~/semana03/measurements/main.c"
+'7  67  2  ~/semana03/measurements/main.c
+|4,55,67,2,1555476780,"~/semana03/measurements/main.c"
+'8  67  2  ~/semana03/measurements/main.c
+|4,56,67,2,1555476780,"~/semana03/measurements/main.c"
+'9  67  2  ~/semana03/measurements/main.c
+|4,57,67,2,1555476780,"~/semana03/measurements/main.c"
 
 # Jumplist (newest first):
--'  5  0  ~/semana02/measurements/main.c
-|4,39,5,0,1555441830,"~/semana02/measurements/main.c"
--'  1  0  ~/semana02/measurements/main.c
-|4,39,1,0,1555355658,"~/semana02/measurements/main.c"
--'  4  2  ~/semana02/measurements/main.c
-|4,39,4,2,1555355315,"~/semana02/measurements/main.c"
--'  1  0  ~/semana02/measurements/main.c
-|4,39,1,0,1555355294,"~/semana02/measurements/main.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303679,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303679,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303679,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303679,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303666,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303666,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303666,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303666,"~/semana01/bash/lib/bashCommands.c"
--'  7  0  ~/semana01/bash/include/bashCommands.h
-|4,39,7,0,1555303662,"~/semana01/bash/include/bashCommands.h"
--'  7  0  ~/semana01/bash/include/bashCommands.h
-|4,39,7,0,1555303662,"~/semana01/bash/include/bashCommands.h"
--'  7  0  ~/semana01/bash/include/bashCommands.h
-|4,39,7,0,1555303662,"~/semana01/bash/include/bashCommands.h"
--'  7  0  ~/semana01/bash/include/bashCommands.h
-|4,39,7,0,1555303662,"~/semana01/bash/include/bashCommands.h"
--'  7  0  ~/semana01/bash/include/bashCommands.h
-|4,39,7,0,1555303662,"~/semana01/bash/include/bashCommands.h"
--'  7  0  ~/semana01/bash/include/bashCommands.h
-|4,39,7,0,1555303662,"~/semana01/bash/include/bashCommands.h"
--'  7  0  ~/semana01/bash/include/bashCommands.h
-|4,39,7,0,1555303662,"~/semana01/bash/include/bashCommands.h"
--'  7  0  ~/semana01/bash/include/bashCommands.h
-|4,39,7,0,1555303662,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303657,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303657,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303657,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303657,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303657,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303657,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303657,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303657,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303655,"~/semana01/bash/lib/bashCommands.c"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  7  4  ~/semana01/bash/include/bashCommands.h
-|4,39,7,4,1555303638,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  1  0  ~/semana01/bash/include/bashCommands.h
-|4,39,1,0,1555303620,"~/semana01/bash/include/bashCommands.h"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  61  16  ~/semana01/bash/lib/bashCommands.c
-|4,39,61,16,1555303617,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303596,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303596,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303596,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303596,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303596,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303596,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303596,"~/semana01/bash/lib/bashCommands.c"
--'  1  0  ~/semana01/bash/lib/bashCommands.c
-|4,39,1,0,1555303596,"~/semana01/bash/lib/bashCommands.c"
+-'  83  0  ~/semana03/measurements/main.c
+|4,39,83,0,1555476909,"~/semana03/measurements/main.c"
+-'  1  0  ~/semana03/measurements/main.c
+|4,39,1,0,1555476887,"~/semana03/measurements/main.c"
+-'  66  0  ~/semana03/measurements/main.c
+|4,39,66,0,1555476874,"~/semana03/measurements/main.c"
+-'  66  0  ~/semana03/measurements/main.c
+|4,39,66,0,1555476874,"~/semana03/measurements/main.c"
+-'  67  3  ~/semana03/measurements/main.c
+|4,39,67,3,1555476872,"~/semana03/measurements/main.c"
+-'  67  3  ~/semana03/measurements/main.c
+|4,39,67,3,1555476872,"~/semana03/measurements/main.c"
+-'  1  0  ~/semana03/measurements/main.c
+|4,39,1,0,1555476813,"~/semana03/measurements/main.c"
+-'  66  11  ~/semana03/measurements/main.c
+|4,39,66,11,1555476800,"~/semana03/measurements/main.c"
+-'  1  0  ~/semana03/measurements/main.c
+|4,39,1,0,1555476785,"~/semana03/measurements/main.c"
+-'  67  2  ~/semana03/measurements/main.c
+|4,39,67,2,1555476780,"~/semana03/measurements/main.c"
+-'  67  2  ~/semana03/measurements/main.c
+|4,39,67,2,1555476780,"~/semana03/measurements/main.c"
+-'  1  0  ~/semana03/measurements/main.c
+|4,39,1,0,1555476711,"~/semana03/measurements/main.c"
+-'  1  0  ~/semana03/measurements/main.c
+|4,39,1,0,1555476685,"~/semana03/measurements/main.c"
+-'  69  22  ~/semana03/measurements/main.c
+|4,39,69,22,1555476680,"~/semana03/measurements/main.c"
+-'  69  22  ~/semana03/measurements/main.c
+|4,39,69,22,1555476680,"~/semana03/measurements/main.c"
+-'  69  22  ~/semana03/measurements/main.c
+|4,39,69,22,1555476680,"~/semana03/measurements/main.c"
+-'  69  22  ~/semana03/measurements/main.c
+|4,39,69,22,1555476680,"~/semana03/measurements/main.c"
+-'  69  22  ~/semana03/measurements/main.c
+|4,39,69,22,1555476680,"~/semana03/measurements/main.c"
+-'  69  22  ~/semana03/measurements/main.c
+|4,39,69,22,1555476680,"~/semana03/measurements/main.c"
+-'  1  0  ~/semana03/measurements/main.c
+|4,39,1,0,1555476651,"~/semana03/measurements/main.c"
+-'  68  0  ~/semana03/measurements/main.c
+|4,39,68,0,1555476638,"~/semana03/measurements/main.c"
+-'  68  0  ~/semana03/measurements/main.c
+|4,39,68,0,1555476638,"~/semana03/measurements/main.c"
+-'  68  0  ~/semana03/measurements/main.c
+|4,39,68,0,1555476638,"~/semana03/measurements/main.c"
+-'  68  0  ~/semana03/measurements/main.c
+|4,39,68,0,1555476638,"~/semana03/measurements/main.c"
+-'  68  0  ~/semana03/measurements/main.c
+|4,39,68,0,1555476638,"~/semana03/measurements/main.c"
+-'  68  0  ~/semana03/measurements/main.c
+|4,39,68,0,1555476638,"~/semana03/measurements/main.c"
+-'  68  0  ~/semana03/measurements/main.c
+|4,39,68,0,1555476638,"~/semana03/measurements/main.c"
+-'  1  0  ~/semana03/measurements/main.c
+|4,39,1,0,1555476622,"~/semana03/measurements/main.c"
+-'  4  18  ~/semana03/measurements/main.c
+|4,39,4,18,1555476552,"~/semana03/measurements/main.c"
+-'  4  18  ~/semana03/measurements/main.c
+|4,39,4,18,1555476552,"~/semana03/measurements/main.c"
+-'  4  18  ~/semana03/measurements/main.c
+|4,39,4,18,1555476552,"~/semana03/measurements/main.c"
+-'  4  18  ~/semana03/measurements/main.c
+|4,39,4,18,1555476552,"~/semana03/measurements/main.c"
+-'  4  18  ~/semana03/measurements/main.c
+|4,39,4,18,1555476552,"~/semana03/measurements/main.c"
+-'  4  18  ~/semana03/measurements/main.c
+|4,39,4,18,1555476552,"~/semana03/measurements/main.c"
+-'  4  18  ~/semana03/measurements/main.c
+|4,39,4,18,1555476552,"~/semana03/measurements/main.c"
+-'  4  18  ~/semana03/measurements/main.c
+|4,39,4,18,1555476552,"~/semana03/measurements/main.c"
+-'  1  0  ~/semana03/measurements/main.c
+|4,39,1,0,1555476541,"~/semana03/measurements/main.c"
+-'  77  13  ~/semana03/measurements/main.c
+|4,39,77,13,1555476532,"~/semana03/measurements/main.c"
+-'  79  13  ~/semana03/measurements/main.c
+|4,39,79,13,1555476532,"~/semana03/measurements/main.c"
+-'  78  13  ~/semana03/measurements/main.c
+|4,39,78,13,1555476532,"~/semana03/measurements/main.c"
+-'  77  13  ~/semana03/measurements/main.c
+|4,39,77,13,1555476532,"~/semana03/measurements/main.c"
+-'  79  13  ~/semana03/measurements/main.c
+|4,39,79,13,1555476532,"~/semana03/measurements/main.c"
+-'  78  13  ~/semana03/measurements/main.c
+|4,39,78,13,1555476532,"~/semana03/measurements/main.c"
+-'  77  13  ~/semana03/measurements/main.c
+|4,39,77,13,1555476532,"~/semana03/measurements/main.c"
+-'  79  13  ~/semana03/measurements/main.c
+|4,39,79,13,1555476532,"~/semana03/measurements/main.c"
+-'  78  13  ~/semana03/measurements/main.c
+|4,39,78,13,1555476532,"~/semana03/measurements/main.c"
+-'  77  13  ~/semana03/measurements/main.c
+|4,39,77,13,1555476532,"~/semana03/measurements/main.c"
+-'  79  13  ~/semana03/measurements/main.c
+|4,39,79,13,1555476532,"~/semana03/measurements/main.c"
+-'  78  13  ~/semana03/measurements/main.c
+|4,39,78,13,1555476532,"~/semana03/measurements/main.c"
+-'  79  13  ~/semana03/measurements/main.c
+|4,39,79,13,1555476532,"~/semana03/measurements/main.c"
+-'  78  13  ~/semana03/measurements/main.c
+|4,39,78,13,1555476532,"~/semana03/measurements/main.c"
+-'  79  13  ~/semana03/measurements/main.c
+|4,39,79,13,1555476532,"~/semana03/measurements/main.c"
+-'  78  13  ~/semana03/measurements/main.c
+|4,39,78,13,1555476532,"~/semana03/measurements/main.c"
+-'  79  13  ~/semana03/measurements/main.c
+|4,39,79,13,1555476532,"~/semana03/measurements/main.c"
+-'  78  13  ~/semana03/measurements/main.c
+|4,39,78,13,1555476532,"~/semana03/measurements/main.c"
+-'  1  0  ~/semana03/measurements/main.c
+|4,39,1,0,1555473139,"~/semana03/measurements/main.c"
+-'  65  6  ~/semana03/measurements/main.c
+|4,39,65,6,1555473119,"~/semana03/measurements/main.c"
+-'  65  6  ~/semana03/measurements/main.c
+|4,39,65,6,1555473119,"~/semana03/measurements/main.c"
+-'  65  6  ~/semana03/measurements/main.c
+|4,39,65,6,1555473119,"~/semana03/measurements/main.c"
+-'  66  6  ~/semana03/measurements/main.c
+|4,39,66,6,1555473119,"~/semana03/measurements/main.c"
+-'  65  6  ~/semana03/measurements/main.c
+|4,39,65,6,1555473119,"~/semana03/measurements/main.c"
+-'  66  6  ~/semana03/measurements/main.c
+|4,39,66,6,1555473119,"~/semana03/measurements/main.c"
+-'  65  6  ~/semana03/measurements/main.c
+|4,39,65,6,1555473119,"~/semana03/measurements/main.c"
+-'  66  6  ~/semana03/measurements/main.c
+|4,39,66,6,1555473119,"~/semana03/measurements/main.c"
+-'  65  6  ~/semana03/measurements/main.c
+|4,39,65,6,1555473119,"~/semana03/measurements/main.c"
+-'  66  6  ~/semana03/measurements/main.c
+|4,39,66,6,1555473119,"~/semana03/measurements/main.c"
+-'  65  6  ~/semana03/measurements/main.c
+|4,39,65,6,1555473119,"~/semana03/measurements/main.c"
+-'  66  6  ~/semana03/measurements/main.c
+|4,39,66,6,1555473119,"~/semana03/measurements/main.c"
+-'  65  6  ~/semana03/measurements/main.c
+|4,39,65,6,1555473119,"~/semana03/measurements/main.c"
+-'  65  6  ~/semana03/measurements/main.c
+|4,39,65,6,1555473119,"~/semana03/measurements/main.c"
+-'  1  0  ~/semana03/measurements/main.c
+|4,39,1,0,1555473105,"~/semana03/measurements/main.c"
+-'  39  25  ~/semana03/measurements/main.c
+|4,39,39,25,1555473096,"~/semana03/measurements/main.c"
+-'  38  25  ~/semana03/measurements/main.c
+|4,39,38,25,1555473096,"~/semana03/measurements/main.c"
+-'  39  25  ~/semana03/measurements/main.c
+|4,39,39,25,1555473096,"~/semana03/measurements/main.c"
+-'  38  25  ~/semana03/measurements/main.c
+|4,39,38,25,1555473096,"~/semana03/measurements/main.c"
+-'  39  25  ~/semana03/measurements/main.c
+|4,39,39,25,1555473096,"~/semana03/measurements/main.c"
+-'  38  25  ~/semana03/measurements/main.c
+|4,39,38,25,1555473096,"~/semana03/measurements/main.c"
+-'  39  25  ~/semana03/measurements/main.c
+|4,39,39,25,1555473096,"~/semana03/measurements/main.c"
+-'  38  25  ~/semana03/measurements/main.c
+|4,39,38,25,1555473096,"~/semana03/measurements/main.c"
+-'  39  25  ~/semana03/measurements/main.c
+|4,39,39,25,1555473096,"~/semana03/measurements/main.c"
+-'  38  25  ~/semana03/measurements/main.c
+|4,39,38,25,1555473096,"~/semana03/measurements/main.c"
+-'  39  25  ~/semana03/measurements/main.c
+|4,39,39,25,1555473096,"~/semana03/measurements/main.c"
+-'  38  25  ~/semana03/measurements/main.c
+|4,39,38,25,1555473096,"~/semana03/measurements/main.c"
+-'  39  25  ~/semana03/measurements/main.c
+|4,39,39,25,1555473096,"~/semana03/measurements/main.c"
+-'  38  25  ~/semana03/measurements/main.c
+|4,39,38,25,1555473096,"~/semana03/measurements/main.c"
+-'  39  25  ~/semana03/measurements/main.c
+|4,39,39,25,1555473096,"~/semana03/measurements/main.c"
+-'  38  25  ~/semana03/measurements/main.c
+|4,39,38,25,1555473096,"~/semana03/measurements/main.c"
+-'  38  25  ~/semana03/measurements/main.c
+|4,39,38,25,1555473096,"~/semana03/measurements/main.c"
+-'  38  25  ~/semana03/measurements/main.c
+|4,39,38,25,1555473096,"~/semana03/measurements/main.c"
+-'  44  0  ~/semana03/measurements/main.c
+|4,39,44,0,1555473078,"~/semana03/measurements/main.c"
+-'  43  0  ~/semana03/measurements/main.c
+|4,39,43,0,1555473078,"~/semana03/measurements/main.c"
+-'  44  0  ~/semana03/measurements/main.c
+|4,39,44,0,1555473078,"~/semana03/measurements/main.c"
+-'  43  0  ~/semana03/measurements/main.c
+|4,39,43,0,1555473078,"~/semana03/measurements/main.c"
+-'  44  0  ~/semana03/measurements/main.c
+|4,39,44,0,1555473078,"~/semana03/measurements/main.c"
+-'  43  0  ~/semana03/measurements/main.c
+|4,39,43,0,1555473078,"~/semana03/measurements/main.c"
+-'  44  0  ~/semana03/measurements/main.c
+|4,39,44,0,1555473078,"~/semana03/measurements/main.c"
+-'  43  0  ~/semana03/measurements/main.c
+|4,39,43,0,1555473078,"~/semana03/measurements/main.c"
+-'  44  0  ~/semana03/measurements/main.c
+|4,39,44,0,1555473078,"~/semana03/measurements/main.c"
+-'  43  0  ~/semana03/measurements/main.c
+|4,39,43,0,1555473078,"~/semana03/measurements/main.c"
+-'  44  0  ~/semana03/measurements/main.c
+|4,39,44,0,1555473078,"~/semana03/measurements/main.c"
 
 # History of marks within files (newest to oldest):
+
+> ~/semana03/measurements/main.c
+	*	1555476891	0
+	"	83	0
+	.	67	0
+	+	76	7
+	+	77	1
+	+	41	13
+	+	7	0
+	+	3	0
+	+	5	18
+	+	40	33
+	+	58	5
+	+	57	1
+	+	59	20
+	+	61	0
+	+	64	0
+	+	65	0
+	+	72	14
+	+	74	0
+	+	75	0
+	+	77	0
+	+	59	19
+	+	61	19
+	+	64	19
+	+	65	19
+	+	72	18
+	+	74	17
+	+	75	17
+	+	77	18
+	+	66	12
+	+	6	17
+	+	40	0
+	+	78	1
+	+	41	0
+	+	46	0
+	+	45	0
+	+	65	3
+	+	61	0
+	+	61	2
+	+	63	0
+	+	63	41
+	+	65	20
+	+	65	0
+	+	65	22
+	+	39	21
+	+	40	24
+	+	41	15
+	+	40	22
+	+	62	30
+	+	74	15
+	+	75	17
+	+	77	0
+	+	75	0
+	+	74	0
+	+	72	0
+	+	65	0
+	+	64	0
+	+	61	0
+	+	59	0
+	+	63	0
+	+	75	0
+	+	77	20
+	+	66	8
+	+	66	19
+	+	66	20
+	+	69	40
+	+	66	6
+	+	38	0
+	+	69	11
+	+	79	0
+	+	80	39
+	+	65	0
+	+	7	0
+	+	39	25
+	+	66	6
+	+	77	13
+	+	4	18
+	+	69	22
+	+	66	0
+	+	68	4
+	+	75	0
+	+	67	0
+	+	69	42
+	+	77	0
+	+	66	11
+	+	67	0
+	s	69	21
 
 > ~/semana02/measurements/main.c
 	*	1555356791	0
