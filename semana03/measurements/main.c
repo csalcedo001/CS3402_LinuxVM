@@ -64,9 +64,10 @@ int main (void) {
 			close(fd[1]);
 			
 			wait(NULL);
+
 			clock_gettime(CLOCK_MONOTONIC_RAW, &end);
 
-			totalTime += start.tv_nsec - end.tv_nsec;
+			totalTime += end.tv_nsec - start.tv_nsec;
 		}
 		else {
 			close(fd[1]);
@@ -74,6 +75,8 @@ int main (void) {
 			read(fd[0], &read_msg, 1);
 	
 			close(fd[0]);
+
+			exit(0);
 		}
 	}
 
