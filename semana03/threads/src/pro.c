@@ -5,7 +5,7 @@
 void *printHola(void *num_hilo) {
 	long t;
 	t = (long) num_hilo;
-	printf("Hola Mundo desde el hilo %ld \n", t);
+	printf("Hola Mundo! Desde el hilo %ld \n", t);
 	pthread_exit(NULL);
 }
 
