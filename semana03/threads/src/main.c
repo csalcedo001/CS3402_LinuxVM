@@ -31,11 +31,14 @@ int main (void) {
 
 	matrixContainer *C = initMatrix(A->height, B->width);
 
-	printf("%d\n", A->matrix[0][0]);
-
 	randomFillMatrix(A);
-	
-	printf("%d\n", A->matrix[0][0]);
+	randomFillMatrix(B);
+
+	sequentialMatrixMultiplication(A, B, C);
+
+	printMatrix(A);
+	printMatrix(B);
+	printMatrix(C);
 
 	deleteMatrix(A);
 	deleteMatrix(B);
