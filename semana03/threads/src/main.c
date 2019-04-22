@@ -30,7 +30,13 @@ int main (void) {
 	}
 
 	matrixContainer *C = initMatrix(A->height, B->width);
+
+	printf("%d\n", A->matrix[0][0]);
+
+	randomFillMatrix(A);
 	
+	printf("%d\n", A->matrix[0][0]);
+
 	deleteMatrix(A);
 	deleteMatrix(B);
 	deleteMatrix(C);

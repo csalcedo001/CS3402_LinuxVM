@@ -18,17 +18,17 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1555892584,,"wq"
+|2,0,1555893438,,"wq"
+:make
+|2,0,1555892973,,"make"
 :w
-|2,0,1555889630,,"w"
+|2,0,1555892971,,"w"
 :n
 |2,0,1555888903,,"n"
 :q
 |2,0,1555888735,,"q"
 :wwq
 |2,0,1555888211,,"wwq"
-:make
-|2,0,1555888145,,"make"
 :q!
 |2,0,1555885968,,"q!"
 :make bin/pro
@@ -142,8 +142,8 @@ $
 
 # Registers:
 "0	LINE	0
-		deleteMatrix(B);
-|3,0,0,1,1,0,1555889841,"	deleteMatrix(B);"
+		printf("%d\n", A->matrix[0][0]);
+|3,0,0,1,1,0,1555893383,"	printf(\"%d\\n\", A->matrix[0][0]);"
 "1	LINE	0
 		C.height = A.height;
 		C.width = B.width;
@@ -180,295 +180,240 @@ $
 	
 |3,0,26,0,1,0,1554750974,""
 ""-	CHAR	0
-	-
-|3,1,36,0,1,0,1555890051,"-"
+	, int, int
+|3,1,36,0,1,0,1555893437,", int, int"
 
 # File marks:
-'0  31  0  ~/semana03/threads/lib/matrix.c
-|4,48,31,0,1555892584,"~/semana03/threads/lib/matrix.c"
-'1  19  9  ~/semana03/threads/lib/matrix.c
-|4,49,19,9,1555892535,"~/semana03/threads/lib/matrix.c"
-'2  19  9  ~/semana03/threads/lib/matrix.c
-|4,50,19,9,1555892535,"~/semana03/threads/lib/matrix.c"
-'3  110  0  ~/semana03/threads/report.txt
-|4,51,110,0,1555892522,"~/semana03/threads/report.txt"
-'4  1  0  ~/semana03/threads/bin/main
-|4,52,1,0,1555890755,"~/semana03/threads/bin/main"
-'5  2  0  ~/semana03/threads/report.txt
-|4,53,2,0,1555890679,"~/semana03/threads/report.txt"
-'6  2  0  ~/semana03/threads/report.txt
-|4,54,2,0,1555890679,"~/semana03/threads/report.txt"
-'7  25  37  ~/semana03/threads/lib/matrix.c
-|4,55,25,37,1555890053,"~/semana03/threads/lib/matrix.c"
-'8  23  37  ~/semana03/threads/lib/matrix.c
-|4,56,23,37,1555890053,"~/semana03/threads/lib/matrix.c"
-'9  25  37  ~/semana03/threads/lib/matrix.c
-|4,57,25,37,1555890053,"~/semana03/threads/lib/matrix.c"
+'0  13  39  ~/semana03/threads/include/matrix.h
+|4,48,13,39,1555893438,"~/semana03/threads/include/matrix.h"
+'1  23  40  ~/semana03/threads/lib/matrix.c
+|4,49,23,40,1555893427,"~/semana03/threads/lib/matrix.c"
+'2  38  1  ~/semana03/threads/src/main.c
+|4,50,38,1,1555893388,"~/semana03/threads/src/main.c"
+'3  34  32  ~/semana03/threads/src/main.c
+|4,51,34,32,1555893206,"~/semana03/threads/src/main.c"
+'4  34  32  ~/semana03/threads/src/main.c
+|4,52,34,32,1555893206,"~/semana03/threads/src/main.c"
+'5  31  0  ~/semana03/threads/lib/matrix.c
+|4,53,31,0,1555893151,"~/semana03/threads/lib/matrix.c"
+'6  31  0  ~/semana03/threads/lib/matrix.c
+|4,54,31,0,1555893151,"~/semana03/threads/lib/matrix.c"
+'7  30  1  ~/semana03/threads/lib/matrix.c
+|4,55,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+'8  30  1  ~/semana03/threads/lib/matrix.c
+|4,56,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+'9  30  1  ~/semana03/threads/lib/matrix.c
+|4,57,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
 
 # Jumplist (newest first):
+-'  13  39  ~/semana03/threads/include/matrix.h
+|4,39,13,39,1555893438,"~/semana03/threads/include/matrix.h"
+-'  1  0  ~/semana03/threads/include/matrix.h
+|4,39,1,0,1555893432,"~/semana03/threads/include/matrix.h"
+-'  23  40  ~/semana03/threads/lib/matrix.c
+|4,39,23,40,1555893427,"~/semana03/threads/lib/matrix.c"
+-'  23  40  ~/semana03/threads/lib/matrix.c
+|4,39,23,40,1555893427,"~/semana03/threads/lib/matrix.c"
+-'  27  34  ~/semana03/threads/lib/matrix.c
+|4,39,27,34,1555893426,"~/semana03/threads/lib/matrix.c"
+-'  27  34  ~/semana03/threads/lib/matrix.c
+|4,39,27,34,1555893426,"~/semana03/threads/lib/matrix.c"
+-'  1  0  ~/semana03/threads/lib/matrix.c
+|4,39,1,0,1555893408,"~/semana03/threads/lib/matrix.c"
+-'  1  0  ~/semana03/threads/lib/matrix.c
+|4,39,1,0,1555893408,"~/semana03/threads/lib/matrix.c"
+-'  38  1  ~/semana03/threads/src/main.c
+|4,39,38,1,1555893388,"~/semana03/threads/src/main.c"
+-'  38  1  ~/semana03/threads/src/main.c
+|4,39,38,1,1555893388,"~/semana03/threads/src/main.c"
+-'  38  1  ~/semana03/threads/src/main.c
+|4,39,38,1,1555893388,"~/semana03/threads/src/main.c"
+-'  38  1  ~/semana03/threads/src/main.c
+|4,39,38,1,1555893388,"~/semana03/threads/src/main.c"
+-'  1  0  ~/semana03/threads/src/main.c
+|4,39,1,0,1555893366,"~/semana03/threads/src/main.c"
+-'  1  0  ~/semana03/threads/src/main.c
+|4,39,1,0,1555893366,"~/semana03/threads/src/main.c"
+-'  1  0  ~/semana03/threads/src/main.c
+|4,39,1,0,1555893366,"~/semana03/threads/src/main.c"
+-'  1  0  ~/semana03/threads/src/main.c
+|4,39,1,0,1555893366,"~/semana03/threads/src/main.c"
+-'  34  32  ~/semana03/threads/src/main.c
+|4,39,34,32,1555893206,"~/semana03/threads/src/main.c"
+-'  34  32  ~/semana03/threads/src/main.c
+|4,39,34,32,1555893206,"~/semana03/threads/src/main.c"
+-'  34  32  ~/semana03/threads/src/main.c
+|4,39,34,32,1555893206,"~/semana03/threads/src/main.c"
+-'  34  32  ~/semana03/threads/src/main.c
+|4,39,34,32,1555893206,"~/semana03/threads/src/main.c"
+-'  34  32  ~/semana03/threads/src/main.c
+|4,39,34,32,1555893206,"~/semana03/threads/src/main.c"
+-'  34  32  ~/semana03/threads/src/main.c
+|4,39,34,32,1555893206,"~/semana03/threads/src/main.c"
+-'  34  32  ~/semana03/threads/src/main.c
+|4,39,34,32,1555893206,"~/semana03/threads/src/main.c"
+-'  34  32  ~/semana03/threads/src/main.c
+|4,39,34,32,1555893206,"~/semana03/threads/src/main.c"
+-'  1  0  ~/semana03/threads/src/main.c
+|4,39,1,0,1555893174,"~/semana03/threads/src/main.c"
+-'  1  0  ~/semana03/threads/src/main.c
+|4,39,1,0,1555893174,"~/semana03/threads/src/main.c"
+-'  1  0  ~/semana03/threads/src/main.c
+|4,39,1,0,1555893174,"~/semana03/threads/src/main.c"
+-'  1  0  ~/semana03/threads/src/main.c
+|4,39,1,0,1555893174,"~/semana03/threads/src/main.c"
 -'  31  0  ~/semana03/threads/lib/matrix.c
-|4,39,31,0,1555892584,"~/semana03/threads/lib/matrix.c"
+|4,39,31,0,1555893151,"~/semana03/threads/lib/matrix.c"
+-'  31  0  ~/semana03/threads/lib/matrix.c
+|4,39,31,0,1555893151,"~/semana03/threads/lib/matrix.c"
+-'  31  0  ~/semana03/threads/lib/matrix.c
+|4,39,31,0,1555893151,"~/semana03/threads/lib/matrix.c"
+-'  31  0  ~/semana03/threads/lib/matrix.c
+|4,39,31,0,1555893151,"~/semana03/threads/lib/matrix.c"
+-'  31  0  ~/semana03/threads/lib/matrix.c
+|4,39,31,0,1555893151,"~/semana03/threads/lib/matrix.c"
+-'  31  0  ~/semana03/threads/lib/matrix.c
+|4,39,31,0,1555893151,"~/semana03/threads/lib/matrix.c"
+-'  31  0  ~/semana03/threads/lib/matrix.c
+|4,39,31,0,1555893151,"~/semana03/threads/lib/matrix.c"
+-'  31  0  ~/semana03/threads/lib/matrix.c
+|4,39,31,0,1555893151,"~/semana03/threads/lib/matrix.c"
+-'  31  0  ~/semana03/threads/lib/matrix.c
+|4,39,31,0,1555893151,"~/semana03/threads/lib/matrix.c"
+-'  31  0  ~/semana03/threads/lib/matrix.c
+|4,39,31,0,1555893151,"~/semana03/threads/lib/matrix.c"
 -'  1  0  ~/semana03/threads/lib/matrix.c
-|4,39,1,0,1555892574,"~/semana03/threads/lib/matrix.c"
--'  19  9  ~/semana03/threads/lib/matrix.c
-|4,39,19,9,1555892535,"~/semana03/threads/lib/matrix.c"
--'  19  9  ~/semana03/threads/lib/matrix.c
-|4,39,19,9,1555892535,"~/semana03/threads/lib/matrix.c"
+|4,39,1,0,1555893137,"~/semana03/threads/lib/matrix.c"
 -'  1  0  ~/semana03/threads/lib/matrix.c
-|4,39,1,0,1555892526,"~/semana03/threads/lib/matrix.c"
--'  110  0  ~/semana03/threads/report.txt
-|4,39,110,0,1555892522,"~/semana03/threads/report.txt"
--'  110  0  ~/semana03/threads/report.txt
-|4,39,110,0,1555892522,"~/semana03/threads/report.txt"
--'  110  0  ~/semana03/threads/report.txt
-|4,39,110,0,1555892522,"~/semana03/threads/report.txt"
--'  110  0  ~/semana03/threads/report.txt
-|4,39,110,0,1555892522,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/report.txt
-|4,39,1,0,1555890821,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/report.txt
-|4,39,1,0,1555890821,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/report.txt
-|4,39,1,0,1555890821,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/report.txt
-|4,39,1,0,1555890821,"~/semana03/threads/report.txt"
--'  125  0  ~/semana03/threads/report.txt
-|4,39,125,0,1555890820,"~/semana03/threads/report.txt"
--'  125  0  ~/semana03/threads/report.txt
-|4,39,125,0,1555890820,"~/semana03/threads/report.txt"
--'  125  0  ~/semana03/threads/report.txt
-|4,39,125,0,1555890820,"~/semana03/threads/report.txt"
--'  125  0  ~/semana03/threads/report.txt
-|4,39,125,0,1555890820,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/bin/main
-|4,39,1,0,1555890755,"~/semana03/threads/bin/main"
--'  1  0  ~/semana03/threads/bin/main
-|4,39,1,0,1555890755,"~/semana03/threads/bin/main"
--'  1  0  ~/semana03/threads/bin/main
-|4,39,1,0,1555890755,"~/semana03/threads/bin/main"
--'  1  0  ~/semana03/threads/bin/main
-|4,39,1,0,1555890755,"~/semana03/threads/bin/main"
--'  1  0  ~/semana03/threads/bin/main
-|4,39,1,0,1555890755,"~/semana03/threads/bin/main"
--'  1  0  ~/semana03/threads/bin/main
-|4,39,1,0,1555890755,"~/semana03/threads/bin/main"
--'  1  0  ~/semana03/threads/bin/main
-|4,39,1,0,1555890755,"~/semana03/threads/bin/main"
--'  1  0  ~/semana03/threads/bin/main
-|4,39,1,0,1555890755,"~/semana03/threads/bin/main"
--'  2  0  ~/semana03/threads/report.txt
-|4,39,2,0,1555890679,"~/semana03/threads/report.txt"
--'  2  0  ~/semana03/threads/report.txt
-|4,39,2,0,1555890679,"~/semana03/threads/report.txt"
--'  2  0  ~/semana03/threads/report.txt
-|4,39,2,0,1555890679,"~/semana03/threads/report.txt"
--'  2  0  ~/semana03/threads/report.txt
-|4,39,2,0,1555890679,"~/semana03/threads/report.txt"
--'  2  0  ~/semana03/threads/report.txt
-|4,39,2,0,1555890679,"~/semana03/threads/report.txt"
--'  2  0  ~/semana03/threads/report.txt
-|4,39,2,0,1555890679,"~/semana03/threads/report.txt"
--'  2  0  ~/semana03/threads/report.txt
-|4,39,2,0,1555890679,"~/semana03/threads/report.txt"
--'  2  0  ~/semana03/threads/report.txt
-|4,39,2,0,1555890679,"~/semana03/threads/report.txt"
--'  2  0  ~/semana03/threads/report.txt
-|4,39,2,0,1555890679,"~/semana03/threads/report.txt"
--'  2  0  ~/semana03/threads/report.txt
-|4,39,2,0,1555890679,"~/semana03/threads/report.txt"
--'  2  0  ~/semana03/threads/report.txt
-|4,39,2,0,1555890679,"~/semana03/threads/report.txt"
--'  2  0  ~/semana03/threads/report.txt
-|4,39,2,0,1555890679,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/report.txt
-|4,39,1,0,1555890674,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/report.txt
-|4,39,1,0,1555890674,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/report.txt
-|4,39,1,0,1555890674,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/report.txt
-|4,39,1,0,1555890674,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/report.txt
-|4,39,1,0,1555890674,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/report.txt
-|4,39,1,0,1555890674,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/report.txt
-|4,39,1,0,1555890674,"~/semana03/threads/report.txt"
--'  1  0  ~/semana03/threads/report.txt
-|4,39,1,0,1555890674,"~/semana03/threads/report.txt"
--'  25  37  ~/semana03/threads/lib/matrix.c
-|4,39,25,37,1555890053,"~/semana03/threads/lib/matrix.c"
--'  23  37  ~/semana03/threads/lib/matrix.c
-|4,39,23,37,1555890053,"~/semana03/threads/lib/matrix.c"
--'  25  37  ~/semana03/threads/lib/matrix.c
-|4,39,25,37,1555890053,"~/semana03/threads/lib/matrix.c"
--'  23  37  ~/semana03/threads/lib/matrix.c
-|4,39,23,37,1555890053,"~/semana03/threads/lib/matrix.c"
--'  23  37  ~/semana03/threads/lib/matrix.c
-|4,39,23,37,1555890053,"~/semana03/threads/lib/matrix.c"
--'  23  37  ~/semana03/threads/lib/matrix.c
-|4,39,23,37,1555890053,"~/semana03/threads/lib/matrix.c"
--'  23  37  ~/semana03/threads/lib/matrix.c
-|4,39,23,37,1555890053,"~/semana03/threads/lib/matrix.c"
--'  23  37  ~/semana03/threads/lib/matrix.c
-|4,39,23,37,1555890053,"~/semana03/threads/lib/matrix.c"
--'  23  37  ~/semana03/threads/lib/matrix.c
-|4,39,23,37,1555890053,"~/semana03/threads/lib/matrix.c"
--'  23  37  ~/semana03/threads/lib/matrix.c
-|4,39,23,37,1555890053,"~/semana03/threads/lib/matrix.c"
--'  23  37  ~/semana03/threads/lib/matrix.c
-|4,39,23,37,1555890053,"~/semana03/threads/lib/matrix.c"
+|4,39,1,0,1555893137,"~/semana03/threads/lib/matrix.c"
 -'  1  0  ~/semana03/threads/lib/matrix.c
-|4,39,1,0,1555889990,"~/semana03/threads/lib/matrix.c"
+|4,39,1,0,1555893137,"~/semana03/threads/lib/matrix.c"
 -'  1  0  ~/semana03/threads/lib/matrix.c
-|4,39,1,0,1555889990,"~/semana03/threads/lib/matrix.c"
+|4,39,1,0,1555893137,"~/semana03/threads/lib/matrix.c"
 -'  1  0  ~/semana03/threads/lib/matrix.c
-|4,39,1,0,1555889990,"~/semana03/threads/lib/matrix.c"
+|4,39,1,0,1555893137,"~/semana03/threads/lib/matrix.c"
 -'  1  0  ~/semana03/threads/lib/matrix.c
-|4,39,1,0,1555889990,"~/semana03/threads/lib/matrix.c"
+|4,39,1,0,1555893137,"~/semana03/threads/lib/matrix.c"
 -'  1  0  ~/semana03/threads/lib/matrix.c
-|4,39,1,0,1555889990,"~/semana03/threads/lib/matrix.c"
+|4,39,1,0,1555893137,"~/semana03/threads/lib/matrix.c"
 -'  1  0  ~/semana03/threads/lib/matrix.c
-|4,39,1,0,1555889990,"~/semana03/threads/lib/matrix.c"
+|4,39,1,0,1555893137,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
+-'  30  1  ~/semana03/threads/lib/matrix.c
+|4,39,30,1,1555892989,"~/semana03/threads/lib/matrix.c"
 -'  1  0  ~/semana03/threads/lib/matrix.c
-|4,39,1,0,1555889990,"~/semana03/threads/lib/matrix.c"
+|4,39,1,0,1555892979,"~/semana03/threads/lib/matrix.c"
 -'  1  0  ~/semana03/threads/lib/matrix.c
-|4,39,1,0,1555889990,"~/semana03/threads/lib/matrix.c"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
--'  1  0  ~/semana03/threads/include/matrix.h
-|4,39,1,0,1555889988,"~/semana03/threads/include/matrix.h"
+|4,39,1,0,1555892979,"~/semana03/threads/lib/matrix.c"
+-'  1  0  ~/semana03/threads/lib/matrix.c
+|4,39,1,0,1555892979,"~/semana03/threads/lib/matrix.c"
+-'  1  0  ~/semana03/threads/lib/matrix.c
+|4,39,1,0,1555892979,"~/semana03/threads/lib/matrix.c"
+-'  1  0  ~/semana03/threads/lib/matrix.c
+|4,39,1,0,1555892979,"~/semana03/threads/lib/matrix.c"
+-'  1  0  ~/semana03/threads/lib/matrix.c
+|4,39,1,0,1555892979,"~/semana03/threads/lib/matrix.c"
+-'  1  0  ~/semana03/threads/lib/matrix.c
+|4,39,1,0,1555892979,"~/semana03/threads/lib/matrix.c"
+-'  1  0  ~/semana03/threads/lib/matrix.c
+|4,39,1,0,1555892979,"~/semana03/threads/lib/matrix.c"
+-'  41  0  ~/semana03/threads/lib/matrix.c
+|4,39,41,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  39  0  ~/semana03/threads/lib/matrix.c
+|4,39,39,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  40  0  ~/semana03/threads/lib/matrix.c
+|4,39,40,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  38  0  ~/semana03/threads/lib/matrix.c
+|4,39,38,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  41  0  ~/semana03/threads/lib/matrix.c
+|4,39,41,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  39  0  ~/semana03/threads/lib/matrix.c
+|4,39,39,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  40  0  ~/semana03/threads/lib/matrix.c
+|4,39,40,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  38  0  ~/semana03/threads/lib/matrix.c
+|4,39,38,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  41  0  ~/semana03/threads/lib/matrix.c
+|4,39,41,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  39  0  ~/semana03/threads/lib/matrix.c
+|4,39,39,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  40  0  ~/semana03/threads/lib/matrix.c
+|4,39,40,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  38  0  ~/semana03/threads/lib/matrix.c
+|4,39,38,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  41  0  ~/semana03/threads/lib/matrix.c
+|4,39,41,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  39  0  ~/semana03/threads/lib/matrix.c
+|4,39,39,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  40  0  ~/semana03/threads/lib/matrix.c
+|4,39,40,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  38  0  ~/semana03/threads/lib/matrix.c
+|4,39,38,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  41  0  ~/semana03/threads/lib/matrix.c
+|4,39,41,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  39  0  ~/semana03/threads/lib/matrix.c
+|4,39,39,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  40  0  ~/semana03/threads/lib/matrix.c
+|4,39,40,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  38  0  ~/semana03/threads/lib/matrix.c
+|4,39,38,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  41  0  ~/semana03/threads/lib/matrix.c
+|4,39,41,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  39  0  ~/semana03/threads/lib/matrix.c
+|4,39,39,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  40  0  ~/semana03/threads/lib/matrix.c
+|4,39,40,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  38  0  ~/semana03/threads/lib/matrix.c
+|4,39,38,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  41  0  ~/semana03/threads/lib/matrix.c
+|4,39,41,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  39  0  ~/semana03/threads/lib/matrix.c
+|4,39,39,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  40  0  ~/semana03/threads/lib/matrix.c
+|4,39,40,0,1555892975,"~/semana03/threads/lib/matrix.c"
+-'  38  0  ~/semana03/threads/lib/matrix.c
+|4,39,38,0,1555892975,"~/semana03/threads/lib/matrix.c"
 
 # History of marks within files (newest to oldest):
 
-> ~/semana03/threads/lib/matrix.c
-	*	1555892581	0
-	"	31	0
-	^	19	10
-	.	19	9
-	+	1	15
-	+	2	15
-	+	7	0
-	+	22	38
-	+	8	32
-	+	13	8
-	+	15	26
-	+	13	45
-	+	16	41
-	+	22	56
-	+	7	0
-	+	2	16
-	+	6	18
-	+	16	9
-	+	32	0
-	+	26	20
-	+	29	14
-	+	8	48
-	+	13	0
-	+	12	16
-	+	13	44
-	+	16	0
-	+	15	25
-	+	24	34
-	+	11	3
-	+	12	3
-	+	13	3
-	+	16	4
-	+	26	9
-	+	29	9
-	+	31	8
-	+	10	0
-	+	13	0
-	+	30	0
-	+	25	27
-	+	22	38
-	+	11	9
-	+	12	17
-	+	25	37
-	+	19	9
-	a	22	0
-
-> ~/semana03/threads/report.txt
-	*	1555892511	0
-	"	110	0
-
-> ~/semana03/threads/bin/main
-	*	1555890753	0
-	"	1	0
-
 > ~/semana03/threads/include/matrix.h
-	*	1555889965	0
-	"	1	0
+	*	1555893437	0
+	"	13	39
 	^	13	39
-	.	13	38
+	.	13	39
 	+	16	5
 	+	12	63
 	+	12	47
@@ -498,17 +443,70 @@ $
 	+	14	33
 	+	12	31
 	+	14	34
-	+	13	38
+	+	13	39
+
+> ~/semana03/threads/lib/matrix.c
+	*	1555893426	0
+	"	23	40
+	^	31	1
+	.	23	0
+	+	1	15
+	+	2	15
+	+	8	0
+	+	23	38
+	+	9	32
+	+	14	8
+	+	16	26
+	+	14	45
+	+	17	41
+	+	23	56
+	+	8	0
+	+	2	16
+	+	7	18
+	+	17	9
+	+	41	0
+	+	35	20
+	+	38	14
+	+	9	48
+	+	14	0
+	+	13	16
+	+	14	44
+	+	17	0
+	+	16	25
+	+	33	34
+	+	12	3
+	+	13	3
+	+	14	3
+	+	17	4
+	+	35	9
+	+	38	9
+	+	40	8
+	+	11	0
+	+	14	0
+	+	39	0
+	+	34	27
+	+	23	38
+	+	12	9
+	+	13	17
+	+	34	37
+	+	20	9
+	+	28	35
+	+	25	0
+	+	5	16
+	+	30	2
+	+	31	0
+	+	23	0
+	a	23	0
 
 > ~/semana03/threads/src/main.c
-	*	1555889923	0
-	"	32	46
-	^	32	47
-	.	32	46
+	*	1555893387	0
+	"	38	1
+	^	39	0
+	.	39	0
 	+	1	18
-	+	39	1
+	+	45	1
 	+	13	1
-	+	37	0
+	+	43	0
 	+	13	28
 	+	18	32
 	+	13	32
@@ -535,21 +533,21 @@ $
 	+	30	1
 	+	24	61
 	+	29	10
-	+	37	0
+	+	43	0
 	+	22	44
-	+	37	33
-	+	37	1
-	+	37	0
+	+	43	33
+	+	43	1
+	+	43	0
 	+	3	18
 	+	8	0
 	+	13	34
 	+	18	24
 	+	23	23
 	+	32	19
-	+	37	0
-	+	34	18
-	+	37	0
-	+	34	8
+	+	43	0
+	+	40	18
+	+	43	0
+	+	40	8
 	+	11	0
 	+	10	18
 	+	13	30
@@ -563,16 +561,28 @@ $
 	+	27	17
 	+	28	0
 	+	25	0
-	+	34	0
-	+	35	0
-	+	34	1
-	+	37	0
-	+	36	14
+	+	40	0
+	+	41	0
+	+	40	1
+	+	43	0
+	+	42	14
 	+	32	50
-	+	34	0
+	+	40	0
 	+	15	28
 	+	23	19
 	+	32	46
+	+	34	32
+	+	36	19
+	+	38	0
+	+	39	0
+
+> ~/semana03/threads/report.txt
+	*	1555892511	0
+	"	110	0
+
+> ~/semana03/threads/bin/main
+	*	1555890753	0
+	"	1	0
 
 > ~/semana03/threads/]
 	*	1555888903	0

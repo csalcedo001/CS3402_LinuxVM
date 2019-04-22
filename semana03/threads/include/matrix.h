@@ -10,7 +10,7 @@ typedef struct matrixContainer {
 } matrixContainer;
 
 matrixContainer *initMatrix(int, int);
-void randomFillMatrix(matrixContainer *, int, int);
+void randomFillMatrix(matrixContainer *);
 void deleteMatrix(matrixContainer *);
 
 #endif

@@ -2,6 +2,7 @@
 #define MATRIX_C
 
 #include <stdlib.h>
+#include <time.h>
 
 #include "matrix.h"
 
@@ -19,7 +20,15 @@ matrixContainer *initMatrix(int height, int width) {
 	return M;
 }
 
-void randomFillMatrix(matrixContainer *M, int min, int max) {}
+void randomFillMatrix(matrixContainer *M) {
+	srand(time(NULL));
+
+	for (int row = 0; row < M->height; ++row) {
+		for(int col = 0; col < M->width; ++col) {
+			M->matrix[row][col] = rand() % 6;
+		}
+	}
+}
 
 void deleteMatrix(matrixContainer *M) {
 	for (int row = 0; row < M->height; ++row) {
