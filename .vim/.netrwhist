@@ -1,6 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/cesar/semana02'
 let g:netrw_dirhist_2='/home/cesar/semana02/measurements'
 let g:netrw_dirhist_3='/home/cesar/semana01/bash/lib'
 let g:netrw_dirhist_4='/home/cesar/semana03/threads/src'
+let g:netrw_dirhist_5='/home/cesar/semana03/threads/include'
+let g:netrw_dirhist_6='/home/cesar/semana03/threads/lib'
+let g:netrw_dirhist_7='/home/cesar/semana03/threads/src'
+let g:netrw_dirhist_8='/home/cesar/semana03/threads/build'

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <time.h>
 
 #include "matrix.h"
 
@@ -31,14 +32,39 @@ int main (void) {
 
 	matrixContainer *C = initMatrix(A->height, B->width);
 
+	clearMatrix(C);
+
+	int seed = time(NULL);
+
+	setMatrixRandomSeed(seed);
+
 	randomFillMatrix(A);
 	randomFillMatrix(B);
 
-	sequentialMatrixMultiplication(A, B, C);
+	
+	struct timespec start, end;
 
-	printMatrix(A);
-	printMatrix(B);
-	printMatrix(C);
+	clock_gettime(CLOCK_MONOTONIC_RAW, &start);
+	sequentialMatrixMultiplication(A, B, C);
+	clock_gettime(CLOCK_MONOTONIC_RAW, &end); 
+	long long sequentialTime = (long long) end.tv_nsec - start.tv_nsec;
+
+
+
+	clearMatrix(C);
+
+	setMatrixRandomSeed(seed);
+
+	randomFillMatrix(A);
+	randomFillMatrix(B);
+
+	clock_gettime(CLOCK_MONOTONIC_RAW, &start);
+	parallelMatrixMultiplication(A, B, C, 8);
+	clock_gettime(CLOCK_MONOTONIC_RAW, &end);
+
+	long long parallelTime = (long long) end.tv_nsec - start.tv_nsec;
+
+	printf("\nTiempo secuencial: %lld\nTiempo paralelo: %lld\n", sequentialTime, parallelTime);
 
 	deleteMatrix(A);
 	deleteMatrix(B);

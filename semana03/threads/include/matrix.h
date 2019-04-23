@@ -11,11 +11,22 @@ typedef struct matrixContainer {
 
 matrixContainer *initMatrix(int, int);
 void deleteMatrix(matrixContainer *);
+void clearMatrix(matrixContainer *);
 void randomFillMatrix(matrixContainer *);
+void setMatrixRandomSeed(int);
+void printMatrix(matrixContainer *);
 void sequentialMatrixMultiplication(
 	matrixContainer*,
 	matrixContainer*,
-	matrixContainer*);
-void printMatrix(matrixContainer *);
+	matrixContainer*
+);
+int getNextTask(int *, int *);
+void *solveNextTask(void *);
+void parallelMatrixMultiplication(
+	matrixContainer*,
+	matrixContainer*,
+	matrixContainer*,
+	int
+);
 
 #endif
