@@ -89,7 +89,7 @@ int getNextTask(int *row, int *col) {
 		*row = resultRow;
 		*col = resultCol++;
 
-		if (resultCol == resultM->width) {
+		if (resultCol >= resultM->width) {
 			resultCol = 0;
 			resultRow++;
 		}
@@ -104,8 +104,11 @@ int getNextTask(int *row, int *col) {
 	return 0;
 }
 
+int t = 0;
+
 // Calculates next available cell 
 void *solveNextTask(void *data) {
+	int c = t++;
 	int row, col;
 
 	while (getNextTask(&row, &col)) {
@@ -132,8 +135,10 @@ void parallelMatrixMultiplication(
 
 	pthread_t threads[threadNum];
 
-	for (int i = 0; i < threadNum; ++i) {
-		pthread_create(&threads[i], NULL, solveNextTask, (void *) &i);
+	int threadIndex;
+
+	for (threadIndex = 0; threadIndex < threadNum; ++threadIndex) {
+		pthread_create(&threads[threadIndex], NULL, solveNextTask, NULL);
 	}
 
 	for (int i = 0; i < threadNum; ++i) {

@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <time.h>
+#include <sys/time.h>
 
 #include "matrix.h"
-
 int main (void) {
 	matrixContainer *A, *B;
 
@@ -42,13 +41,13 @@ int main (void) {
 	randomFillMatrix(B);
 
 	
-	struct timespec start, end;
+	struct timeval start, end;
 
-	clock_gettime(CLOCK_MONOTONIC_RAW, &start);
+	gettimeofday(&start, NULL);
 	sequentialMatrixMultiplication(A, B, C);
-	clock_gettime(CLOCK_MONOTONIC_RAW, &end); 
-	long long sequentialTime = (long long) end.tv_nsec - start.tv_nsec;
+	gettimeofday(&end, NULL);
 
+	long long sequentialTime = end.tv_usec - start.tv_usec + (end.tv_sec - start.tv_sec) * 1000000;
 
 
 	clearMatrix(C);
@@ -58,11 +57,11 @@ int main (void) {
 	randomFillMatrix(A);
 	randomFillMatrix(B);
 
-	clock_gettime(CLOCK_MONOTONIC_RAW, &start);
+	gettimeofday(&start, NULL);
 	parallelMatrixMultiplication(A, B, C, 8);
-	clock_gettime(CLOCK_MONOTONIC_RAW, &end);
+	gettimeofday(&end, NULL);
 
-	long long parallelTime = (long long) end.tv_nsec - start.tv_nsec;
+	long long parallelTime = end.tv_usec - start.tv_usec + (end.tv_sec - start.tv_sec) * 1000000;
 
 	printf("\nTiempo secuencial: %lld\nTiempo paralelo: %lld\n", sequentialTime, parallelTime);
 
